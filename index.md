@@ -14,8 +14,8 @@ title: Welcome
  
 ### You can find me around the internet at the following locations:
 
-- **[Bluesky](https://bsky.app/profile/nowisthetimeof.monster)**
-- **[Personal Instagram](https://instagram.com/whatnotery)**
-- **[Wine Instagram](https://instagram.com/dionysian.wine)**
-- **[Largely Defunct Cycling Instagram](https://instagram.com/goslowvelo)**
-- **[Letterboxd](https://letterboxd.com/whatnotery/)**
+- [#Bluesky](https://bsky.app/profile/nowisthetimeof.monster)
+- [#Personal Instagram](https://instagram.com/whatnotery)
+- [#Wine Instagram](https://instagram.com/dionysian.wine)
+- [#Largely Defunct Cycling Instagram](https://instagram.com/goslowvelo)
+- [#Letterboxd](https://letterboxd.com/whatnotery/)
