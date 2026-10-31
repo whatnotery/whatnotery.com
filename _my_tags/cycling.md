@@ -1,0 +1,4 @@
+---
+slug: bikes
+name: cycling
+---

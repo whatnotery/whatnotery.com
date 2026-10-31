@@ -1,0 +1,62 @@
+
+title: Whatnotery
+email: jos.oshea@pm.me
+description: >- # this means to ignore newlines until "baseurl:"
+ The website of Jos O'shea
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://whatnotery.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+# Build settings
+theme: jekyll-bear-theme
+plugins:
+  - jekyll-feed
+
+
+collections:
+  my_tags:
+    output: true
+    permalink: /tagged/:slug/
+defaults:
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: tagged
+
+# baseurl: ""
+permalink: /writings/:slug
+timezone: America/New_York
+future: false
+
+# Add general links to site pages here
+links:
+ # Resume: /assets/resume.pdf
+
+
+# Add links for more focus here
+special_links:
+  #"Search": https://duckduckgo.com
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
