@@ -37,7 +37,19 @@ if [ -z "$(git status --porcelain)" ]; then
 else
   git commit -m "deploy: rebuild site $(date '+%Y-%m-%d %H:%M:%S')"
 fi
-git push -u origin main
+if push_output=$(git push -u origin main 2>&1); then
+  echo "$push_output"
+else
+  echo "$push_output"
+  if echo "$push_output" | grep -qE "rejected|non-fast-forward"; then
+    echo ""
+    echo "Push rejected: the remote has commits you don't have locally"
+    echo "(most likely the old Jekyll source). Run this once to replace it:"
+    echo ""
+    echo "    git push -f origin main"
+  fi
+  exit 1
+fi
 
 echo "==> Pulling latest build on the server..."
 ssh "$SSH_HOST" "cd $REMOTE_DIR && git pull"
