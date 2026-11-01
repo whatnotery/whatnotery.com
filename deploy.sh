@@ -51,7 +51,7 @@ else
   exit 1
 fi
 
-echo "==> Pulling latest build on the server..."
-ssh "$SSH_HOST" "cd $REMOTE_DIR && git pull"
+echo "==> Syncing latest build on the server..."
+ssh "$SSH_HOST" "cd $REMOTE_DIR && git fetch origin && git reset --hard origin/main"
 
 echo "==> Deploy complete."
