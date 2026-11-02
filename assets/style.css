@@ -398,3 +398,94 @@ input[type=reset] {
 .gallery-back {
     margin-top: var(--spacing-md);
 }
+
+/* =============================================================================
+   PHOTOGRAPHY - LIGHTBOX MODAL
+   ============================================================================= */
+
+.gallery img {
+    cursor: zoom-in;
+    transition: opacity var(--transition-fast) ease;
+}
+
+.gallery img:hover {
+    opacity: 0.85;
+}
+
+.gallery-modal {
+    position: fixed;
+    inset: 0;
+    z-index: var(--z-modal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+}
+
+.gallery-modal[hidden] {
+    display: none;
+}
+
+.gallery-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.gallery-modal__figure {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    max-width: 1000px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-modal__image {
+    max-width: 100%;
+    max-height: 82vh;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-modal__close,
+.gallery-modal__prev,
+.gallery-modal__next {
+    position: absolute;
+    z-index: 2;
+    border: none;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border-radius: var(--radius-md);
+    padding: 8px 14px;
+    font-size: 1.6em;
+    line-height: 1;
+    cursor: pointer;
+    transition: background var(--transition-fast) ease;
+}
+
+.gallery-modal__close:hover,
+.gallery-modal__prev:hover,
+.gallery-modal__next:hover {
+    background: var(--main-color);
+}
+
+.gallery-modal__close {
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+}
+
+.gallery-modal__prev {
+    left: var(--spacing-md);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gallery-modal__next {
+    right: var(--spacing-md);
+    top: 50%;
+    transform: translateY(-50%);
+}
