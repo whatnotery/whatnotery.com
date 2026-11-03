@@ -16,7 +16,7 @@ REMOTE_DIR="~/MyShare/Serve/whatnotery.com/"
 
 echo "==> Building Jekyll site..."
 cd "$SOURCE_DIR"
-jekyll build -d "$BUILD_DIR"
+bundle exec jekyll build -d "$BUILD_DIR"
 
 echo "==> Preparing deploy repo..."
 cd "$BUILD_DIR"
