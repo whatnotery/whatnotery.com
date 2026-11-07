@@ -264,6 +264,18 @@ ul.blog-posts li a:visited {
     color: var(--visited-color);
 }
 
+ul.blog-posts li .post-tags {
+    flex: 0 0 auto;
+    margin-left: auto;
+    padding-left: var(--spacing-md);
+    font-size: 0.85em;
+    text-align: right;
+}
+
+ul.blog-posts li .post-tags a {
+    border-bottom: none;
+}
+
 i time {
     font-style: normal;
     opacity: 0.7;
