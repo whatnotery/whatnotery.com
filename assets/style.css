@@ -276,6 +276,24 @@ ul.blog-posts li .post-tags a {
     border-bottom: none;
 }
 
+@media (max-width: 600px) {
+    ul.blog-posts li {
+        flex-wrap: wrap;
+    }
+
+    ul.blog-posts li span {
+        flex: 0 0 100%;
+    }
+
+    ul.blog-posts li .post-tags {
+        flex: 0 0 100%;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+        margin-top: var(--spacing-xs);
+    }
+}
+
 i time {
     font-style: normal;
     opacity: 0.7;
