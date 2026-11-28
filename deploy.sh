@@ -12,7 +12,7 @@ SOURCE_DIR="/Users/jos/Library/Mobile Documents/com~apple~CloudDocs/Code/whatnot
 BUILD_DIR="$HOME/Desktop/whatnotery.com"
 REMOTE_URL="https://github.com/whatnotery/whatnotery.com.git"
 SSH_HOST="ssh.whatnotery.com"
-REMOTE_DIR="~/MyShare/Serve/whatnotery.com/"
+REMOTE_DIR="~/Public/whatnotery.com/"
 
 echo "==> Building Jekyll site..."
 cd "$SOURCE_DIR"
